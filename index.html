@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>The Analytical Engine</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/simple.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Custom styling -->
+		<link rel="stylesheet" href="css/custom.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h2>The Analytical Engine</h2>
+				</section>
+				<section>
+					<section>
+						<h2>History of the Engine</h2>
+					</section>
+					<section>
+						<h2>The Difference Engine</h2>
+						<div class="fragment">
+							a + bx + cx^2 + ... + hx^7
+						</div>
+					</section>
+					<section data-background-iframe="https://www.youtube.com/embed/BlbQsKpq3Ak?rel=0&amp;controls=0&amp;showinfo=0&amp;start=804" data-background-interactive>
+					</section>
+					<section>
+						<blockquote>
+							The Analytical Engine, on the contrary, is not merely adapted for tabulating the results of one particular function and of no other, but for developing and tabulating any function whatever. In fact the engine may be described as being the material expression of any indefinite function of any degree of generality and complexity…
+						</blockquote>
+						<i>Ada, Countess of Lovelace</i>
+					</section>
+					<section>
+						<h2>Table of Logarithms of the Natural Numbers</h2>
+					</section>
+					<section data-background-image="images/babbage-table-of-logarithms-large.png" data-background-size="contain">
+					</section>
+					<section>
+						<h2>Multiplication Example</h2>
+						<div class="fragment">
+							534 &times; 342 = ?
+						</div>
+						<div class="fragment">
+							log(534) = 2.7275
+						</div>
+						<div class="fragment">
+							log(342) = 2.5340
+						</div>
+						<div class="fragment">
+							2.7275 + 2.5340 = 5.2615
+						</div>
+						<div class="fragment">
+							10^5.2615 = 182599
+						</div>
+					</section>
+					<section data-background-image="images/Fig-1-plan1840.jpg" data-background-size="contain">
+					</section>
+					<section data-background-image="images/flat,1000x1000,075,f.u1.jpg" data-background-size="contain">
+					</section>
+				</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>

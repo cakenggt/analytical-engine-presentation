@@ -1,18 +1,20 @@
 Analytical Engine Presentation
 
 History of the Engine
-* The difference engine was a machine designed to find the solution to equations in the form a + bx + cx^2 + ... + hx^7
+* The difference engine was a machine designed to use the method of divided differences to find the solution to equations in the form a + bx + cx^2 + ... + hx^7
+* Difference engine 0 was built between 1819 and 1822 and was showcased at Babbage's house, where Ada Lovelace viewed it
 * Designed difference engine no. 2 in 1849 and constructed at the Science Museum in London between 1989 and 1991
-* Describe difference engine and give quote by Ada: The Analytical Engine, on the contrary, is not merely adapted for tabulating the results of one particular function and of no other, but for developing and tabulating any function whatever. In fact the engine may be described as being the material expression of any indefinite function of any degree of generality and complexity…
 * https://youtu.be/BlbQsKpq3Ak?t=13m24s
 * Analytical Engine first described in 1837 as a successor to the difference engine no. 1
-* Babbage was famous for his "Table of Logarithms of the Natural Numbers" and he envisioned the analytical engine as being able to compute these log tables. There was a big problem with misprintings in the log books, and the analytical engine would solve this.
-* Never built
+* In the notes of a translation of an Italian mathematician's article on the Analytical Engine, Ada describes the difference between the two machines: The Analytical Engine, on the contrary, is not merely adapted for tabulating the results of one particular function and of no other, but for developing and tabulating any function whatever. In fact the engine may be described as being the material expression of any indefinite function of any degree of generality and complexity…
+* Babbage was famous for his "Table of Logarithms of the Natural Numbers" and he envisioned the analytical engine as being able to compute these log tables. There was a big problem with misprintings in the log books, originating from both faulty calculations and faulty copying, and the analytical engine would solve this.
+* Give an example of multiplication using the tables
+* The analytical engine has never been built
 * Top illustration
 * Front illustration
 
 What the Engine Means for History
-* Turing Completeness, what is it?
+* Turing Completeness, what is it? The ability to branch conditionally and to manipulate memory.
 * Abstract data representations: Ada quote: [The Analytical Engine] might act upon other things besides number, were objects found whose mutual fundamental relations could be expressed by those of the abstract science of operations, and which should be also susceptible of adaptations to the action of the operating notation and mechanism of the engine...Supposing, for instance, that the fundamental relations of pitched sounds in the science of harmony and of musical composition were susceptible of such expression and adaptations, the engine might compose elaborate and scientific pieces of music of any degree of complexity or extent.
 * First imaginings of algorithmic efficiency. Babbage: "As soon as an Analytical Engine exists, it will necessarily guide the future course of the science. Whenever any result is sought by its aid, the question will then arise—By what course of calculation can these results be arrived at by the machine in the shortest time?"
 
