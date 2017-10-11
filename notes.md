@@ -21,13 +21,14 @@ What the Engine Means for History
 How the Engine Works
 * Harvard Architecture (Completely separate memory and instructions, instructions aren't even read into memory, unlike today's Modified Harvard Architecture where instructions are stored in memory but aren't readily accessed. The instructions roller is litterally rolled forward and backward)
 * Unlike difference engine, this would have required a steam engine to run instead of a hand crank.
+* The size was on par with a steam engine, not a car.
 * Annunciator Panel: Panel where Attendant would monitor the machine
-* Printer: Prints results both on paper and supposedly in plaster, for future replication
+* Printer: Prints results both on paper and plaster for the flong for stereotype printing. Lead would be poured onto the flong to produce a stereoplate.
 * Curve Drawing Apparatus: Consists of a pen hovering above a sheet, useful for drawing function curves. Babbage: “The discovery of laws from the examination of a multitude of tabulated and reduced observations is greatly assisted by the representation of such tables in the form of curves.”
-* Attendant: Human responsible for library and conditional expansion
-* Mill: CPU of the Engine, responsible for doing all operations according to a series of instruction drums. Mill's lever is triggered during a subtraction that results in a negative number, and is used in conditional statements. Has two ingress axis, a primed ingress axis (for loading in numbers that are more than 50 significant digits for certain operations), an egress axis, and a primed egress axis (for certain extra numbers, like the quotient of division)
+* Mill: CPU of the Engine, responsible for doing all operations according to a series of instruction drums. Mill's lever is triggered during a subtraction that results in a negative number, and is used in conditional statements. Has two ingress axes, a primed ingress axis (for loading in numbers that are more than 50 significant digits for certain operations), an egress axis, and a primed egress axis (for certain extra numbers, like the quotient of division)
 * Card Reader: Used thick punch cards not unlike Jacquard loom. Could advance and backtrack
 * Store: 1000 columns of 50 digit numbers. Represents 166kb of memory when converted to binary. More than the IBM 1401
+* Attendant: Human responsible for library and conditional expansion. Converts shorthand loops and skips into their versions that reference the exact number of cards needed to be skipped.
 
 Porting the Engine
 * John Walker wrote the first emulator in 1997 as a Java applet, ported in 2017 to JavaScript
