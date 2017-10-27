@@ -19,7 +19,7 @@ What the Engine Means for History
 * First imaginings of algorithmic efficiency. Babbage: "As soon as an Analytical Engine exists, it will necessarily guide the future course of the science. Whenever any result is sought by its aid, the question will then arise—By what course of calculation can these results be arrived at by the machine in the shortest time?"
 
 How the Engine Works
-* Harvard Architecture (Completely separate memory and instructions, instructions aren't even read into memory, unlike today's Modified Harvard Architecture where instructions are stored in memory but aren't readily accessed. The instructions roller is litterally rolled forward and backward)
+* Harvard Architecture (Completely separate memory and instructions, instructions aren't even read into memory, unlike today's Modified Harvard Architecture where instructions are stored in memory but aren't readily accessed. The instructions roller is literally rolled forward and backward)
 * Unlike difference engine, this would have required a steam engine to run instead of a hand crank.
 * The size was on par with a steam engine, not a car.
 * Annunciator Panel: Panel where Attendant would monitor the machine
@@ -37,11 +37,11 @@ Writing for the Engine
 * Commands and numbers
 	* A xxxxxxxxxxx attendant instructions
 	* . xxxxxxxxxxx comments
-	* NXXX YYY Set the store at XXX to value YYY
+	* NXXX YYY Set the store at XXX to value YYY. This is for variable initiation at the beginning of the program.
 	* {}(){?(? Skips, loops, and conditionals of each
 	* -+/* operators
-	* LXXX load number at store location XXX into mill. If this is the second load after an operator, execute function
-	* SXXX save number in egress axis at store position XXX
+	* LXXX load number at store location XXX into mill. If this is the second load after an operator, execute function. There is also the primed version for the primed ingress axis.
+	* SXXX save number in egress axis at store position XXX. There is also the primed version for the value on the primed egress axis.
 * Explain how a simple addition and save would be performed
 	* N000 1
 	* N001 2
@@ -52,6 +52,7 @@ Writing for the Engine
 * Demo of atom language package for programming
 * Metaprogramming to introduce pointers and string printing
 * Patterns
+	* No such thing as declaring a number to use on-the-fly, it has to be in the store already. All numbers needed for a program, like 0 for comparisons and 1 for incrementing or decrementing, must be initialized at the beginning of the program.
 * Reliance on the Assistant and Libraries
 
 Demos
