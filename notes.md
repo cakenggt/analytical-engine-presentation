@@ -1,5 +1,14 @@
 Analytical Engine Presentation
 
+Overview
+* Analytical Engine was designed in 1837 and was the first mechanical computer ever designed, but it was never built.
+* Designed by Charles Babbage, who was an English polymath and was especially noteworthy for his series of published log books.
+* Ada, Countess of Lovelace, was an English mathematician and writer. She corresponded with Babbage about the Engine and published the first program meant for it.
+* Talk will be divided into three parts
+* First we will talk about the history of the engine
+* Then comes a description of all the parts of the engine
+* Then we will go through some code written for the engine, and watch the engine calculate the mandelbrot set
+
 History of the Engine
 * The difference engine was a machine designed to use the method of divided differences to find the solution to equations in the form a + bx + cx^2 + ... + hx^7
 * Difference engine 0 was built between 1819 and 1822 and was showcased at Babbage's house, where Ada Lovelace viewed it
@@ -25,7 +34,7 @@ How the Engine Works
 * Annunciator Panel: Panel where Attendant would monitor the machine
 * Printer: Prints results both on paper and plaster for the flong for stereotype printing. Lead would be poured onto the flong to produce a stereoplate.
 * Curve Drawing Apparatus: Consists of a pen hovering above a sheet, useful for drawing function curves. Babbage: “The discovery of laws from the examination of a multitude of tabulated and reduced observations is greatly assisted by the representation of such tables in the form of curves.”
-* Mill: CPU of the Engine, responsible for doing all operations according to a series of instruction drums. Mill's lever is triggered during a subtraction that results in a negative number, and is used in conditional statements. Has two ingress axes, a primed ingress axis (for loading in numbers that are more than 50 significant digits for certain operations), an egress axis, and a primed egress axis (for certain extra numbers, like the quotient of division)
+* Mill: CPU of the Engine, responsible for doing all operations according to a series of instruction drums. Mill's lever is triggered during a subtraction that results in a negative number, and is used in conditional statements. Has two ingress axes, for loading in the operands of operations, and an egress axis which receives the result of an operation.
 * Card Reader: Used thick punch cards not unlike Jacquard loom. Could advance and backtrack
 * Store: 1000 columns of 50 digit numbers. Represents 166kb of memory when converted to binary. More than the IBM 1401
 * Attendant: Human responsible for library and conditional expansion. Converts shorthand loops and skips into their versions that reference the exact number of cards needed to be skipped.
@@ -34,22 +43,6 @@ Porting the Engine
 * John Walker wrote the first emulator in 1997 as a Java applet, ported in 2017 to JavaScript
 
 Writing for the Engine
-* Commands and numbers
-	* A xxxxxxxxxxx attendant instructions
-	* . xxxxxxxxxxx comments
-	* NXXX YYY Set the store at XXX to value YYY. This is for variable initiation at the beginning of the program.
-	* {}(){?(? Skips, loops, and conditionals of each
-	* -+/* operators
-	* LXXX load number at store location XXX into mill. If this is the second load after an operator, execute function. There is also the primed version for the primed ingress axis.
-	* SXXX save number in egress axis at store position XXX. There is also the primed version for the value on the primed egress axis.
-* Explain how a simple addition and save would be performed
-	* N000 1
-	* N001 2
-	* +
-	* L000
-	* L001
-	* S002
-* Demo of atom language package for programming
 * Metaprogramming to introduce pointers and string printing
 * Patterns
 	* No such thing as declaring a number to use on-the-fly, it has to be in the store already. All numbers needed for a program, like 0 for comparisons and 1 for incrementing or decrementing, must be initialized at the beginning of the program.
@@ -57,3 +50,4 @@ Writing for the Engine
 
 Demos
 * Demo of mandelbrot viewer
+analytical-engine Library/mandelbrotviewer.ae
